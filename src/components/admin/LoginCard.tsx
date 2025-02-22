@@ -16,7 +16,7 @@ export const LoginCard = ({ onLogin }: LoginCardProps) => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (loginData.username === "admin" && loginData.password === "admin123") {
+    if (loginData.username === "admin" && loginData.password === "TNP@booking.admin.dev") {
       onLogin(true);
     } else {
       toast.error("Invalid credentials");
