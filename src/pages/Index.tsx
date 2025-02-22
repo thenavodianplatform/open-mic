@@ -30,13 +30,13 @@ const FeatureCard = ({ title, price, route, description }: { title: string; pric
 
 const Index = () => {
   return (
-    <header>
+    
      <div className="row">
       <ul>
        <li><Link route="/admin">Admin Login</Link></li>
       </ul>
      </div>
-     </header>
+    
     <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 space-y-12">
       <div className="text-center space-y-4 max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight fade-in">
