@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import { Header } from "@/components/header"; // Import the Header component
+
 
 
 const FeatureCard = ({ title, price, route, description }: { title: string; price: string; route: string; description: string }) => (
@@ -33,7 +33,7 @@ const Index = () => {
     <header>
      <div className="row">
       <ul>
-       <li><Link href="/admin">Admin Login</Link></li>
+       <li><Link route="/admin">Admin Login</Link></li>
       </ul>
      </div>
      </header>
