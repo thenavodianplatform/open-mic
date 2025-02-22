@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const FeatureCard = ({ title, price, route, description }: { title: string; price: string; route: string; description: string }) => (
   <motion.div
@@ -23,6 +24,20 @@ const FeatureCard = ({ title, price, route, description }: { title: string; pric
     </Card>
   </motion.div>
 );
+
+const Header = () => {
+  return (
+    <header>
+      <div className="row">
+        <ul>
+          <li>
+            <Link to="/admin">Admin Login</Link>
+          </li>
+        </ul>
+      </div>
+    </header>
+  );
+};
 
 const Index = () => {
   return (
@@ -64,5 +79,6 @@ const Index = () => {
     </div>
   );
 };
-
+export default Header;
 export default Index;
+
